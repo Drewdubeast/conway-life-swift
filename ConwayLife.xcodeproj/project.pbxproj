@@ -7,16 +7,57 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7C5461D01FB42DDE005E8105 /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5461CF1FB42DDE005E8105 /* ChartViewController.swift */; };
+		7C60162D1FBA0C4B009B3F81 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C5BEC8E1FB426BC00238EEA /* Charts.framework */; };
+		7C60162E1FBA0C4B009B3F81 /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7C5BEC8E1FB426BC00238EEA /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7CA7621A1FAFFC2C00088FA2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA762191FAFFC2C00088FA2 /* AppDelegate.swift */; };
 		7CA7621C1FAFFC2C00088FA2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA7621B1FAFFC2C00088FA2 /* ViewController.swift */; };
 		7CA7621F1FAFFC2C00088FA2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CA7621D1FAFFC2C00088FA2 /* Main.storyboard */; };
 		7CA762211FAFFC2C00088FA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CA762201FAFFC2C00088FA2 /* Assets.xcassets */; };
-		7CA762241FAFFC2C00088FA2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CA762221FAFFC2C00088FA2 /* LaunchScreen.storyboard */; };
 		7CA7622F1FAFFC2C00088FA2 /* ConwayLifeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA7622E1FAFFC2C00088FA2 /* ConwayLifeTests.swift */; };
 		7CA7623A1FAFFC2C00088FA2 /* ConwayLifeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA762391FAFFC2C00088FA2 /* ConwayLifeUITests.swift */; };
+		7CA7624C1FB27BB000088FA2 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA7624B1FB27BB000088FA2 /* Node.swift */; };
+		7CA7624F1FB27E7500088FA2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CA7624D1FB27E7500088FA2 /* LaunchScreen.storyboard */; };
+		7CA762511FB27F8700088FA2 /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA762501FB27F8700088FA2 /* Board.swift */; };
+		7CA762551FB2894B00088FA2 /* NodeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA762541FB2894B00088FA2 /* NodeButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		7C5BEC8D1FB426BC00238EEA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7C5BEC881FB426BB00238EEA /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 65AD9E95D9ED4DC0BD73A743;
+			remoteInfo = Charts;
+		};
+		7C5BEC8F1FB426BC00238EEA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7C5BEC881FB426BB00238EEA /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1CBBC58C6CE1EBEE9852CE41;
+			remoteInfo = ChartsTests;
+		};
+		7C6016271FBA0C2A009B3F81 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7C6016201FBA0C2A009B3F81 /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 65AD9E95D9ED4DC0BD73A743;
+			remoteInfo = Charts;
+		};
+		7C6016291FBA0C2A009B3F81 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7C6016201FBA0C2A009B3F81 /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1CBBC58C6CE1EBEE9852CE41;
+			remoteInfo = ChartsTests;
+		};
+		7C60162F1FBA0C4B009B3F81 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7C5BEC881FB426BB00238EEA /* Charts.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = A58A4ED274A941CA248EA921;
+			remoteInfo = Charts;
+		};
 		7CA7622B1FAFFC2C00088FA2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 7CA7620E1FAFFC2C00088FA2 /* Project object */;
@@ -33,13 +74,29 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		7C6016311FBA0C4C009B3F81 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				7C60162E1FBA0C4B009B3F81 /* Charts.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		7C5461CF1FB42DDE005E8105 /* ChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
+		7C5BEC881FB426BB00238EEA /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "../../../Downloads/Charts-master/Charts.xcodeproj"; sourceTree = "<group>"; };
+		7C6016201FBA0C2A009B3F81 /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "../../../../Downloads/Charts-master/Charts.xcodeproj"; sourceTree = "<group>"; };
 		7CA762161FAFFC2C00088FA2 /* ConwayLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConwayLife.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CA762191FAFFC2C00088FA2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7CA7621B1FAFFC2C00088FA2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7CA7621E1FAFFC2C00088FA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7CA762201FAFFC2C00088FA2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		7CA762231FAFFC2C00088FA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7CA762251FAFFC2C00088FA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7CA7622A1FAFFC2C00088FA2 /* ConwayLifeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConwayLifeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CA7622E1FAFFC2C00088FA2 /* ConwayLifeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConwayLifeTests.swift; sourceTree = "<group>"; };
@@ -47,6 +104,10 @@
 		7CA762351FAFFC2C00088FA2 /* ConwayLifeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConwayLifeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CA762391FAFFC2C00088FA2 /* ConwayLifeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConwayLifeUITests.swift; sourceTree = "<group>"; };
 		7CA7623B1FAFFC2C00088FA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7CA7624B1FB27BB000088FA2 /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
+		7CA7624E1FB27E7500088FA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7CA762501FB27F8700088FA2 /* Board.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
+		7CA762541FB2894B00088FA2 /* NodeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +115,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C60162D1FBA0C4B009B3F81 /* Charts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,10 +136,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7C5BEC891FB426BB00238EEA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7C5BEC8E1FB426BC00238EEA /* Charts.framework */,
+				7C5BEC901FB426BC00238EEA /* ChartsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7C6016211FBA0C2A009B3F81 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7C6016281FBA0C2A009B3F81 /* Charts.framework */,
+				7C60162A1FBA0C2A009B3F81 /* ChartsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		7CA7620D1FAFFC2C00088FA2 = {
 			isa = PBXGroup;
 			children = (
 				7CA762181FAFFC2C00088FA2 /* ConwayLife */,
+				7C5BEC881FB426BB00238EEA /* Charts.xcodeproj */,
 				7CA7622D1FAFFC2C00088FA2 /* ConwayLifeTests */,
 				7CA762381FAFFC2C00088FA2 /* ConwayLifeUITests */,
 				7CA762171FAFFC2C00088FA2 /* Products */,
@@ -97,11 +178,16 @@
 		7CA762181FAFFC2C00088FA2 /* ConwayLife */ = {
 			isa = PBXGroup;
 			children = (
+				7C6016201FBA0C2A009B3F81 /* Charts.xcodeproj */,
+				7CA7624B1FB27BB000088FA2 /* Node.swift */,
+				7CA762501FB27F8700088FA2 /* Board.swift */,
+				7CA762541FB2894B00088FA2 /* NodeButton.swift */,
 				7CA762191FAFFC2C00088FA2 /* AppDelegate.swift */,
 				7CA7621B1FAFFC2C00088FA2 /* ViewController.swift */,
+				7C5461CF1FB42DDE005E8105 /* ChartViewController.swift */,
 				7CA7621D1FAFFC2C00088FA2 /* Main.storyboard */,
 				7CA762201FAFFC2C00088FA2 /* Assets.xcassets */,
-				7CA762221FAFFC2C00088FA2 /* LaunchScreen.storyboard */,
+				7CA7624D1FB27E7500088FA2 /* LaunchScreen.storyboard */,
 				7CA762251FAFFC2C00088FA2 /* Info.plist */,
 			);
 			path = ConwayLife;
@@ -135,10 +221,12 @@
 				7CA762121FAFFC2C00088FA2 /* Sources */,
 				7CA762131FAFFC2C00088FA2 /* Frameworks */,
 				7CA762141FAFFC2C00088FA2 /* Resources */,
+				7C6016311FBA0C4C009B3F81 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				7C6016301FBA0C4B009B3F81 /* PBXTargetDependency */,
 			);
 			name = ConwayLife;
 			productName = ConwayLife;
@@ -218,6 +306,16 @@
 			mainGroup = 7CA7620D1FAFFC2C00088FA2;
 			productRefGroup = 7CA762171FAFFC2C00088FA2 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 7C5BEC891FB426BB00238EEA /* Products */;
+					ProjectRef = 7C5BEC881FB426BB00238EEA /* Charts.xcodeproj */;
+				},
+				{
+					ProductGroup = 7C6016211FBA0C2A009B3F81 /* Products */;
+					ProjectRef = 7C6016201FBA0C2A009B3F81 /* Charts.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				7CA762151FAFFC2C00088FA2 /* ConwayLife */,
@@ -227,12 +325,43 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		7C5BEC8E1FB426BC00238EEA /* Charts.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Charts.framework;
+			remoteRef = 7C5BEC8D1FB426BC00238EEA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7C5BEC901FB426BC00238EEA /* ChartsTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ChartsTests.xctest;
+			remoteRef = 7C5BEC8F1FB426BC00238EEA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7C6016281FBA0C2A009B3F81 /* Charts.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Charts.framework;
+			remoteRef = 7C6016271FBA0C2A009B3F81 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7C60162A1FBA0C2A009B3F81 /* ChartsTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ChartsTests.xctest;
+			remoteRef = 7C6016291FBA0C2A009B3F81 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		7CA762141FAFFC2C00088FA2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7CA762241FAFFC2C00088FA2 /* LaunchScreen.storyboard in Resources */,
+				7CA7624F1FB27E7500088FA2 /* LaunchScreen.storyboard in Resources */,
 				7CA762211FAFFC2C00088FA2 /* Assets.xcassets in Resources */,
 				7CA7621F1FAFFC2C00088FA2 /* Main.storyboard in Resources */,
 			);
@@ -260,7 +389,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				7CA7621C1FAFFC2C00088FA2 /* ViewController.swift in Sources */,
+				7CA762511FB27F8700088FA2 /* Board.swift in Sources */,
 				7CA7621A1FAFFC2C00088FA2 /* AppDelegate.swift in Sources */,
+				7CA762551FB2894B00088FA2 /* NodeButton.swift in Sources */,
+				7CA7624C1FB27BB000088FA2 /* Node.swift in Sources */,
+				7C5461D01FB42DDE005E8105 /* ChartViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +416,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		7C6016301FBA0C4B009B3F81 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Charts;
+			targetProxy = 7C60162F1FBA0C4B009B3F81 /* PBXContainerItemProxy */;
+		};
 		7CA7622C1FAFFC2C00088FA2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 7CA762151FAFFC2C00088FA2 /* ConwayLife */;
@@ -304,10 +442,10 @@
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		7CA762221FAFFC2C00088FA2 /* LaunchScreen.storyboard */ = {
+		7CA7624D1FB27E7500088FA2 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				7CA762231FAFFC2C00088FA2 /* Base */,
+				7CA7624E1FB27E7500088FA2 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -425,6 +563,7 @@
 		7CA7623F1FAFFC2C00088FA2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LW4594AH6L;
@@ -440,6 +579,7 @@
 		7CA762401FAFFC2C00088FA2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LW4594AH6L;

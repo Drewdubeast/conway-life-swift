@@ -1,7 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -13,13 +17,49 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Conway's Game of Life" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wb0-Y6-GfQ">
+                                <rect key="frame" x="33" y="120" width="308" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="aro-xy-eDw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="v1.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CyQ-a8-bUS">
+                                <rect key="frame" x="33" y="193" width="308" height="56"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="by Drew Wilken" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kfF-Ri-YH1">
+                                <rect key="frame" x="33" y="160" width="308" height="56"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="CyQ-a8-bUS" firstAttribute="top" secondItem="Wb0-Y6-GfQ" secondAttribute="bottom" constant="17" id="DMK-9U-sBN"/>
+                            <constraint firstItem="Wb0-Y6-GfQ" firstAttribute="leading" secondItem="kfF-Ri-YH1" secondAttribute="leading" id="NM0-yR-VrH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="kfF-Ri-YH1" secondAttribute="bottom" constant="451" id="QVt-ii-heM"/>
+                            <constraint firstItem="Wb0-Y6-GfQ" firstAttribute="trailing" secondItem="kfF-Ri-YH1" secondAttribute="trailing" id="X7s-ns-vJv"/>
+                            <constraint firstItem="Wb0-Y6-GfQ" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="cAz-fV-13S"/>
+                            <constraint firstItem="kfF-Ri-YH1" firstAttribute="trailing" secondItem="CyQ-a8-bUS" secondAttribute="trailing" id="lCu-qf-m3s"/>
+                            <constraint firstItem="Wb0-Y6-GfQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="lJh-gF-TjW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="CyQ-a8-bUS" secondAttribute="bottom" constant="418" id="mY7-Ej-8Pa"/>
+                            <constraint firstItem="kfF-Ri-YH1" firstAttribute="leading" secondItem="CyQ-a8-bUS" secondAttribute="leading" id="mib-f0-HvD"/>
+                            <constraint firstItem="kfF-Ri-YH1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="140" id="nAo-TS-4jH"/>
+                            <constraint firstItem="Wb0-Y6-GfQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="33" id="zxW-aD-C0z"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
         </scene>
     </scenes>
 </document>
